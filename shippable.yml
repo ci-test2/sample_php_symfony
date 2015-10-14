@@ -25,4 +25,5 @@ script:
   - bin/behat --format junit --out shippable/testresults/ features/test.feature
 
 notifications:
-  email: false
+  email: 
+    varsha@shippable.com
