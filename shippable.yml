@@ -26,4 +26,4 @@ script:
 
 notifications:
   email: 
-    varsha@shippable.com
+    false
