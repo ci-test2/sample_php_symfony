@@ -29,3 +29,5 @@ notifications:
     false
     
 archive: true
+
+cache: true
