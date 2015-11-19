@@ -23,10 +23,14 @@ before_script:
 
 script:
   - bin/behat --format junit --out shippable/testresults/ features/test.feature
+  
+after_success:
+  - echo "build success"
 
 notifications:
   email: 
-    false
+    varsha@shippable.com
+  irc: "chat.freenode.net#test-irc"
     
 archive: true
 
