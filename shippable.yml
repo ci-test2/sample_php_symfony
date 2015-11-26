@@ -1,24 +1,13 @@
 language: php
 
 php:
-  - 5.3
-  - 5.4
   - 5.5
   - 5.6
   
 env:
  - Foo=test
- - secure: TpvD0s4u+b1zRk17kWvABgJa83GCkMSFPVrrinpPlPekw0zS7yaCvDLLnNrJ7BuVtCFTLhLbeNKj8S3ub+T9WrF0Fpk78rtImI8RVA6ipfzdYgbUUswVfmkZBgS28PF88PHq64Z62Q2NqTMNYlVBURKnnG9KXik2blgdtnoaLH+dkgX9DQsmvJmiRngRto3qTlKQsPpJAe0jx9Y2r28tY4frG0j9oHrf9QHRu6bTw4vcfLDoWJ6UqoQIWCW7wZFHVWmQrX5dBT0J1fGF60W3RsKpuS91DUg6l6fA/fP5+z1K0+75y7HD2XeXpKnuNe5cNIMReh9wrGCboF36Mbp6FA==
+ - secure: eOw/XeflK2mRNhu7z0mhg5mTXWWsyV5/v06wxfYH1hhJr0CpQGvqPFADyo+xco6V38FRS4dMcIidoTtSZzGOHL7TFIJk3TmQ50tJdC/6P0HMbeAirZWlF+sILTl8XXfkYYhBDPI/Is9SWXuQJ6PgCHFXN+btCZhn4+w0bwkbnMOS6yudgGkvy6hxNP/YMuMZNzpbrrDmmZSP+Fn3kO2HExGYWvRFSr8aWvP34SGZ793BjEEO/YA1V/E4DYF/pt6C/McXfm5jsLGdB360i8U5YaWa88L3tjxoyCxpVpSymaUF3e93ae1zFUl2OdccfzPDCkHrGan2sDyOhDgAottaMg==
  
-matrix:
-  allow_failures:
-    - php: "5.3"
-  exclude:
-    - php: "5.4"
-  include:
-    - php: "5.6"
-      env: php=123test
-
 addons:
   hosts:
     local.symfony2-standard-template: 127.0.0.1
@@ -39,6 +28,7 @@ before_script:
 
 script:
   - bin/behat --format junit --out shippable/testresults/ features/test.feature
+  - echo $test
   
 after_success:
   - echo "build success"
