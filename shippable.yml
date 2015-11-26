@@ -5,8 +5,9 @@ php:
   - 5.6
   
 env:
- - Foo=test
- - secure: eOw/XeflK2mRNhu7z0mhg5mTXWWsyV5/v06wxfYH1hhJr0CpQGvqPFADyo+xco6V38FRS4dMcIidoTtSZzGOHL7TFIJk3TmQ50tJdC/6P0HMbeAirZWlF+sILTl8XXfkYYhBDPI/Is9SWXuQJ6PgCHFXN+btCZhn4+w0bwkbnMOS6yudgGkvy6hxNP/YMuMZNzpbrrDmmZSP+Fn3kO2HExGYWvRFSr8aWvP34SGZ793BjEEO/YA1V/E4DYF/pt6C/McXfm5jsLGdB360i8U5YaWa88L3tjxoyCxpVpSymaUF3e93ae1zFUl2OdccfzPDCkHrGan2sDyOhDgAottaMg==
+  global:
+    - Foo=test
+    - secure: eOw/XeflK2mRNhu7z0mhg5mTXWWsyV5/v06wxfYH1hhJr0CpQGvqPFADyo+xco6V38FRS4dMcIidoTtSZzGOHL7TFIJk3TmQ50tJdC/6P0HMbeAirZWlF+sILTl8XXfkYYhBDPI/Is9SWXuQJ6PgCHFXN+btCZhn4+w0bwkbnMOS6yudgGkvy6hxNP/YMuMZNzpbrrDmmZSP+Fn3kO2HExGYWvRFSr8aWvP34SGZ793BjEEO/YA1V/E4DYF/pt6C/McXfm5jsLGdB360i8U5YaWa88L3tjxoyCxpVpSymaUF3e93ae1zFUl2OdccfzPDCkHrGan2sDyOhDgAottaMg==
  
 addons:
   hosts:
