@@ -36,7 +36,7 @@ after_success:
 
 notifications:
   email: 
-    varsha@shippable.com
+    test_ci2@ayhoo.in
   irc: "chat.freenode.net#test-irc"
     
 archive: true
